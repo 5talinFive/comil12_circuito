@@ -332,6 +332,74 @@ header .container {
     background-color: transparent; 
 }
 
+
+
+.sub-estaciones {
+    list-style: none;
+    padding-left: 40px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #ccc; /* O un color que contraste con tu fondo */
+}
+
+.cadetes-creditos {
+    font-size: 0.85em;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 10px;
+}
+
+
+
+
+/* Contenedor principal */
+.estaciones-lista {
+    padding: 20px;
+    text-align: left; /* Asegura que el título y todo esté a la izquierda */
+}
+
+.lista-principal {
+    list-style: none; /* Quitamos los puntos por defecto de HTML */
+    padding: 0;
+}
+
+.lista-principal > li {
+    display: flex; /* Alinea el número y el contenido en una fila */
+    align-items: flex-start; /* Alinea arriba si el texto es muy largo */
+    margin-bottom: 20px;
+}
+
+.numero {
+    background-color: #7a821e; /* El color verde/amarillo militar de tu logo */
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0; /* Evita que el círculo se aplaste */
+}
+
+.contenido {
+    color: white;
+    line-height: 1.4;
+}
+
+.sub-estaciones {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    color: #bdc3c7; /* Un gris claro para las sub-estaciones */
+    font-size: 0.95em;
+}
+
+.sub-estaciones li {
+    margin-bottom: 5px;
+}
+
 /* --- Ajustes Responsivos (Pantallas de Celulares) --- */
 @media (max-width: 768px) {
     .logo-wrapper {
