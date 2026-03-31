@@ -297,6 +297,52 @@ footer p {
     display: block;
 }
 
+
+
+
+/* --- Estilos para el Logo y Header --- */
+
+/* Asegura que el contenedor principal del header distribuya bien los espacios */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ayuda si la pantalla es muy pequeña */
+}
+
+/* Alinea horizontalmente el logo y el texto */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio de separación entre el escudo y el texto COMIL 12 */
+}
+
+/* Hace que el logo sea responsivo y tenga un tamaño adecuado */
+.logo-img {
+    width: 65px; /* Tamaño base para computadoras */
+    height: auto; /* Mantiene las proporciones de la imagen intactas */
+}
+
+
+.logo-img {
+    width: 65px; 
+    height: auto;
+    border-radius: 50%; /* Esta es la magia que corta el fondo blanco */
+    /* opcional: si ves un bordecito raro, puedes agregar un margen interno o fondo */
+    background-color: transparent; 
+}
+
+/* --- Ajustes Responsivos (Pantallas de Celulares) --- */
+@media (max-width: 768px) {
+    .logo-wrapper {
+        gap: 10px; /* Reduce un poco el espacio en móviles */
+    }
+
+    .logo-img {
+        width: 45px; /* Hace el escudo un poco más pequeño para que no ocupe toda la pantalla */
+    }
+}
+
 /* --- RESPONSIVE (Móviles) --- */
 @media (max-width: 768px) {
     header .container {
